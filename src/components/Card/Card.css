@@ -1,0 +1,35 @@
+.card-container{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  height: 30vh;
+  width: 30vw;;
+  padding: 0;
+  grid-area: Card;
+}
+
+.home-card{
+  border: 8px solid black;
+  border-radius: 23px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.outer{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". Card ."
+    ". . ."; 
+}
+
+.list {
+  list-style: square outside none;
+  text-align: left;
+}
