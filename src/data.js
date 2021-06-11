@@ -14,7 +14,7 @@ const data = [
     id: 2,
     type: "Languages",
     area: "Front End",
-    info: ["Javascript","React", "Angular"]
+    info: ["Javascript","React", "Angular", "Vue"]
   }
 ]
 

@@ -8,25 +8,50 @@
   height: 30vh;
   width: 30vw;;
   padding: 0;
-  grid-area: Card;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.previous, .next {
+  color: rgb(27, 27, 27);
+  font-size: 8rem;
+  user-select: none;
+}
+
+.previous:hover, .next:hover {
+  cursor: pointer;
+  /* color: rgba(81, 160, 160, 1); */
+  color: rgba(255, 226, 61, 1);
+  /* border: 2px solid rgba(255, 226, 61, 1);
+  border-radius: 20; */
+}
+
+.previous {
+  grid-area: 2 / 1 / 3 / 2;
+  padding-right: 5rem;
+}
+
+.next {
+  grid-area: 2 / 3 / 3 / 4;
+  padding-left: 5rem;
 }
 
 .home-card{
-  border: 8px solid black;
+  border: 8px solid rgb(27, 27, 27);
+  /* color: rgba(187, 245, 255, 0.1); */
+  /* color: rgba(98, 255, 255, 0.5); */
+  color: rgba(255, 241, 163, 0.5);
+  background-color: rgb(65, 65, 65);
   border-radius: 23px;
-  padding: 3rem;
+  padding: 1px 3rem;
   text-align: center;
 }
 
 .outer{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . ."
-    ". Card ."
-    ". . ."; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .list {

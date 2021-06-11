@@ -5,18 +5,39 @@ import data from '../../data'
 import './Card.css'
 
 const Card = () => {
+  const len = data.length - 1
+  console.log(len);
+
   // eslint-disable-next-line
-  let [current, setCurrent] = useState(1);
-  
+  let [current, setCurrent] = useState(0);
+
+  const handlePrevious  = (current) => {
+    if (current === 0){
+      setCurrent(len);
+      return;
+    }
+    setCurrent(current - 1);
+  }
+
+    const handleNext  = (current) => {
+    if (current === len){
+      setCurrent(0);
+      return;
+    }
+    setCurrent(current + 1);
+  }
+
   switch (data[current].type){
     case "Home":
       return(
         <div className="outer">
-          <div className="card-container">
+        <div className="card-container">
+          <div className="previous" onClick={() => handlePrevious(current)}>&#60;</div>
             <div className="home-card">
               <h1 className=".underline">{data[current].info[0]}</h1>
               <h3>{data[current].info[1]}</h3>
             </div>
+            <div className="next" onClick={() => handleNext(current)}>&#62;</div>
           </div>
         </div>
       )
@@ -24,6 +45,7 @@ const Card = () => {
       return (
         <div className="outer">
           <div className="card-container">
+            <div className="previous" onClick={() => handlePrevious(current)}>&#60;</div>
             <div className="home-card">
               <h1 className="underline">{data[current].area}</h1>
               <ul>
@@ -32,6 +54,7 @@ const Card = () => {
                 })}
               </ul>
             </div>
+            <div className="next" onClick={() => handleNext(current)}>&#62;</div>
           </div>
         </div>     
       )
