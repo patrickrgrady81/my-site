@@ -7,14 +7,14 @@ const Navbar = () => {
   const pageHeight = window.innerHeight;
 
   return (
-    <div className="nav">
+    <nav className="nav">
       <div className="logo"> Patrick Grady </div>
       <div className="links"> 
-        <a href="#Home">Home</a> 
-        <a href="#Projects">Projects</a> 
-        <a href="#About">About</a> 
+        <a href="/#Home">Home</a> 
+        <a href="/#Projects">Projects</a>
+        <a href="/#About">About</a>
       </div>
-    </div>
+    </nav>
   )
 }
 
