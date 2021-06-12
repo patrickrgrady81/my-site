@@ -8,13 +8,13 @@ const data = [
     id: 1,
     type: "Languages",
     area: "Back End",
-    info: ["Node", "Rails / Sinatra", "Django / Flask"]
+    info: ["Node", "Rails", "Sinatra", "Django", "Flask"]
   },
     {
     id: 2,
     type: "Languages",
     area: "Front End",
-    info: ["Javascript","React", "Angular", "Vue"]
+    info: ["Javascript", "JQuery", "React", "Angular", "Vue"]
   }
 ]
 

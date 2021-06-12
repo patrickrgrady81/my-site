@@ -5,10 +5,8 @@ import data from '../../data'
 import './Card.css'
 
 const Card = () => {
-  const len = data.length - 1
-  console.log(len);
+  const len = data.length - 1;
 
-  // eslint-disable-next-line
   let [current, setCurrent] = useState(0);
 
   const handlePrevious  = (current) => {
