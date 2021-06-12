@@ -1,0 +1,45 @@
+.nav {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 4rem;
+  width: auto;
+  border: 6px solid rgb(65, 65, 65);
+  font-size: 2rem;
+  background-color: rgb(65, 65, 65);
+  color: rgba(255, 241, 163, 0.5);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.logo, .links {
+  padding-left: 3rem;
+}
+  
+.logo { 
+  grid-area: 1 / 1 / 2 / 3; 
+}
+
+.links { 
+  grid-area: 1 / 5 / 2 / 6; 
+  padding-right: 0;
+}
+
+a {
+  color: rgba(255, 241, 163, 0.5);
+  text-decoration: none;
+  padding-right: 3rem;
+}
+
+a:hover {
+  color: rgb(125, 160, 250);
+}
+
+/* 
+@media (max-width: 768px) {
+  .nav{ flex-flow: column nowrap; }
+} */
