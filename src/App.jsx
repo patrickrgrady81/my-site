@@ -6,15 +6,13 @@ import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 
-// TODO: Add React Router With Scrolling
-
 function App() {
   return (
   <div className="page">
     <Navbar />
-    <a href="#Home"><Carousel/></a>
-    <a href="#Projects"><Projects/></a>
-    <a href="#About"><About/></a>
+    <a href="#Home" ><Carousel/></a>
+    <a href="#Projects" ><Projects/></a>
+    <a href="#About" ><About/></a>
   </div>
   )
 }

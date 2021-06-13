@@ -10,12 +10,65 @@ const data = [
     area: "Back End",
     info: ["Node", "Rails", "Sinatra", "Django", "Flask"]
   },
-    {
+  {
     id: 2,
     type: "Languages",
     area: "Front End",
     info: ["Javascript", "JQuery", "React", "Angular", "Vue"]
-  }
+  },
+  {
+    id: 3,
+    type: "Project",
+    name: "MiniJs",
+    briefDesc: "A list of mini javascript projects",
+    fullDescription: "These vanilla javascript projects are small little projects showing off basic javascript and css",
+    languages: ["HTML", "CSS", "Javascript"],
+    demoBack: null,
+    demoFront: "https://patrickrgrady81.github.io/MiniJS/",
+    back: null,
+    front: "https://github.com/patrickrgrady81/MiniJS",
+    image: "MiniJs",
+  },
+  {
+    id: 4,
+    type: "Project",
+    name: "Recipe Revamp",
+    briefDesc: "Recipes App",
+    fullDescription: "Search allrecipes.com or create your own recipe. Then save and edit them in your profile",
+    languages: ["Sinatra"],
+    demoBack: "https://reciperevamp.herokuapp.com/users/pat",
+    demoFront: null,
+    back: "https://github.com/patrickrgrady81/Sinatra-App",
+    front: null,
+    image: "RecipeRevamp.png",
+  },
+  {
+    id: 5,
+    type: "Project",
+    name: "Novel Ideas",
+    briefDesc: "Book App",
+    fullDescription: "Search , save, and chat about books. Save books to your profile for later viewing. See descriptions of books. Use the built in forums to discuss, share and review books.",
+    languages: ["Ruby on Rails"],
+    demoBack: "https://novel-ideas.herokuapp.com/",
+    demoFront: null,
+    back: "https://github.com/patrickrgrady81/novel-ideas",
+    front: null,
+    image: "NovelIdeas.png",
+  },
+  {
+    id: 6,
+    type: "Project",
+    name: "PaddySnake",
+    briefDesc: "Snake Game",
+    fullDescription: "Classic Snake game with a few tweaks. Play with your friends to see who can get the highest score. There is a scoreboard to keep track of all the high scores",
+    languages: ["Ruby on Rails", "Javascript"],
+    demoBack: "https://paddysnake.herokuapp.com/",
+    demoFront: "https://github.com/patrickrgrady81/Snake/settings/pages",
+    back: "https://paddysnake.herokuapp.com/",
+    front: "https://github.com/patrickrgrady81/Snake",
+    image: "PaddySnake.png",
+  },
 ]
 
 export default data
+

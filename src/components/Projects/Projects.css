@@ -3,3 +3,8 @@
   width: auto;
   background-color: red;
 }
+
+.container {
+  columns: 12rem auto;
+  column-gap: 2rem;
+}
