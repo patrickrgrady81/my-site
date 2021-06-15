@@ -8,6 +8,8 @@ import MiniJs from './assets/MiniJs.png'
 import RecipeRevamp from './assets/RecipeRevamp.png';
 import NovelIdeas from './assets/NovelIdeas.png';
 import PaddySnake from './assets/PaddySnake.png';
+import Peeker from './assets/Peeker.png';
+import CityInfo from './assets/CityInfo.png';
 
 const Card = () => {
   const len = data.length - 1;
@@ -75,6 +77,12 @@ const Card = () => {
           break; 
         case 6:
           image = PaddySnake;
+          break; 
+        case 7:
+          image = Peeker;
+          break; 
+        case 8:
+          image = CityInfo;
           break; 
         default:
           throw new Error("No such image");

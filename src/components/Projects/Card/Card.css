@@ -1,21 +1,20 @@
-.projects {
+/* .projects {
   height: 100vh;
   width: auto;
   background-color: white;
-  color: black;
-  cursor: default;
-  white-space: nowrap;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 0px;
   grid-row-gap: 10px;
+  color: black;
+  cursor: default;
+  white-space: nowrap;
 }
 
-.div1, .div2, .div3, .div4, .div5, .div6, .div7 {
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9  {
+  border: 3px solid red; 
   text-align: center;
-  border: 3px solid red;
 }
 
 .div1 { 
@@ -29,18 +28,6 @@
   text-align: center;
 }
 
-.div2 { grid-area: 2 / 1 / 3 / 2; }
-
-.div3 { grid-area: 2 / 2 / 3 / 3; }
-
-.div4 { grid-area: 2 / 3 / 3 / 4; }
-
-.div5 { grid-area: 3 / 1 / 4 / 2; }
-
-.div6 { grid-area: 3 / 2 / 4 / 3; }
-
-.div7 { grid-area: 3 / 3 / 4 / 4; }
-
 .message {
     order: 0;
     flex: 0 1 auto;
@@ -48,3 +35,19 @@
     color: black;
     padding-bottom: 1vh;
 }
+
+.div2 { 
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.div4 { 
+  grid-area: 2 / 3 / 3 / 4; 
+  height: 200px;
+  width: 400px;
+}
+
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 3 / 3 / 4 / 4; } */
