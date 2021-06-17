@@ -19,6 +19,7 @@
   grid-row-gap: 0px;
 
   white-space: nowrap;
+  z-index: 100;
 }
 
 .logo, .links {

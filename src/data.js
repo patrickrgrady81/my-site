@@ -21,7 +21,7 @@ const data = [
     type: "Project",
     name: "MiniJs",
     briefDesc: "A list of mini javascript projects",
-    fullDescription: "These vanilla javascript projects are small little projects showing off basic javascript and css",
+    fullDescription: "These vanilla javascript projects are little projects \nshowing off basic HTML, javascript and css",
     languages: ["HTML", "CSS", "Javascript"],
     demoBack: null,
     demoFront: "https://patrickrgrady81.github.io/MiniJS/",
