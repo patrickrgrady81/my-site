@@ -65,4 +65,9 @@ li.lang-item {
   flex: 0 1 auto;
   align-self: auto;
   font-size: 0.82rem;
-  }
+}
+
+div.links a {
+  color: black;
+  text-decoration: underline;
+}

@@ -21,10 +21,10 @@ const Card = (props) => {
         </ul>
       </div>
       <div className="demo-code">
-      <div className="links">Start Backend: {props.info.demoBack}</div>
-      <div className="links">Start Frontend: {props.info.demoFront}</div>
-      <div className="links">Backend Code: {props.info.back}</div>
-      <div className="links">Frontend Code: {props.info.front}</div>
+      <div className="links">Start Backend: <a href={props.info.demoBack}>{props.info.demoBack}</a></div>
+      <div className="links">Start Frontend: <a href={props.info.demoFront}>{props.info.demoFront}</a></div>
+      <div className="links">Backend code: <a href={props.info.back}>{props.info.back}</a></div>
+      <div className="links">Backend code: <a href={props.info.front}>{props.info.front}</a></div>
       </div>
     </div>
   )
