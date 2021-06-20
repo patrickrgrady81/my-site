@@ -1,5 +1,5 @@
 .projects-page {
-  height: 180vh;
+  height: 95vh;
   width: 97vw;
   width: auto;
   background-color: white;
@@ -29,15 +29,13 @@
   align-items: flex-end;
   padding-bottom: 2rem;
   height: 30vh;
-  /* border: 3px solid purple; */
 }
 
 .project-list {
   display: grid;
+  grid-gap: 25px 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
   height: 70vh;
-  /* border: 3px solid rgba(150, 187, 255, 0.904); */
 }
 
 .message {
@@ -45,7 +43,6 @@
   flex: 0 1 auto;
   align-self: auto;
   text-align: center;
-  /* border: 3px solid orange; */
 }
 
 .individual {

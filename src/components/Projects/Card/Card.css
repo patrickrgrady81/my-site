@@ -38,11 +38,8 @@
 .lang-list {
   margin-top: 0;
   font-size: 0.82rem;
-}
-
-li.lang-item {
-  display: block;
-  list-style: square outside none;
+  padding-left: 30px;
+  padding-right: 90px;
 }
 
 .lang {
@@ -60,14 +57,58 @@ li.lang-item {
   white-space: nowrap;
 }
 
-.links {
+.ilinks {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
   font-size: 0.82rem;
+  color: black;
+  text-decoration: underline;  
 }
 
-div.links a {
-  color: black;
-  text-decoration: underline;
+li.li {
+  list-style: square;
+}
+
+a.tooltips_cls {
+  position: relative;
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.tooltips_cls span {
+  position: absolute;
+  width: 400px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  border: 1px solid 000000;
+  text-shadow: 0px 0px 0px #000000;
+  color: white;
+}
+
+a.tooltips_cls span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+a:hover.tooltips_cls span {
+  visibility: visible;
+  opacity: 0.7;
+  bottom: 30px;
+  left: 50%;
+  margin-left:-76px;
+  z-index: 999;
 }
