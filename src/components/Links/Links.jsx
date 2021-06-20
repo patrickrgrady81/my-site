@@ -15,7 +15,7 @@ const Links = () => {
     <div className="myLinks">
       <a href="https://github.com/patrickrgrady81" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" className="github" /></a>
       <a href="https://www.linkedin.com/in/patgrady64/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" className="linkedin" /></a>
-      <a onClick={handleClick} target="_blank"><div className="resume" rel="noopener noreferrer">Resume</div></a>
+      <span onClick={handleClick} target="_blank"><div className="resume" rel="noopener noreferrer">Resume</div></span>
     </div>
   )
 }
