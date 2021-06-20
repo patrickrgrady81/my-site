@@ -43,6 +43,8 @@
   flex: 0 1 auto;
   align-self: auto;
   text-align: center;
+  padding-left: 10rem;
+  padding-bottom: 3rem;
 }
 
 .individual {
