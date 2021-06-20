@@ -19,6 +19,7 @@ const data = [
   {
     id: 3,
     type: "Project",
+    idName: "Mini",
     name: "MiniJs",
     briefDesc: "A list of mini javascript projects",
     fullDescription: "These vanilla javascript projects are little projects \nshowing off basic HTML, javascript and css",
@@ -32,6 +33,7 @@ const data = [
   {
     id: 4,
     type: "Project",
+    idName: "Recipe",
     name: "Recipe Revamp",
     briefDesc: "Recipes App",
     fullDescription: "Search allrecipes.com or create your own recipe. Then save and edit them in your profile",
@@ -45,6 +47,7 @@ const data = [
   {
     id: 5,
     type: "Project",
+    idName: "Novel",
     name: "Novel Ideas",
     briefDesc: "Book App",
     fullDescription: "Search , save, and chat about books. Save books to your profile for later viewing. See descriptions of books. Use the built in forums to discuss, share and review books.",
@@ -58,6 +61,7 @@ const data = [
   {
     id: 6,
     type: "Project",
+    idName: "Snake",
     name: "PaddySnake",
     briefDesc: "Snake Game",
     fullDescription: "Classic Snake game with a few tweaks. Play with your friends to see who can get the highest score. There is a scoreboard to keep track of all the high scores",
@@ -71,6 +75,7 @@ const data = [
   {
     id: 7,
     type: "Project",
+    idName: "Peeker",
     name: "Peeker",
     briefDesc: "Video Poker",
     fullDescription: "Try your luck with this video poker game. Bet up to 5 credits, discard the ones you don't want and try to get the best hand. Good Luck!",
@@ -84,6 +89,7 @@ const data = [
   {
     id: 8,
     type: "Project",
+    idName: "Info",
     name: "City Info",
     briefDesc: "Get information about any city",
     fullDescription: "Choose any city in the world. Get weather, food and current events from that city",

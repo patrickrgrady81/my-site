@@ -100,7 +100,7 @@ const Card = () => {
                 <img className="item project-pic" src={image} alt="MiniJs" />
               </div>
               <div className="item bottom">{data[current].briefDesc}</div>
-              <a className="item bottom pad" href="/#Projects">(Click Here For More Information)</a>
+              <a className="item bottom pad" href={`/#${data[current].idName}`}>(Click Here For More Information)</a>
             </div>
             <div className="next" onClick={() => handleNext(current)}>&#62;</div>
           </div>

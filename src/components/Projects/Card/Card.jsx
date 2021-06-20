@@ -8,7 +8,7 @@ const video = [null, null, null, null, "https://www.youtube.com/watch?v=bmmeJO4A
 
 const Card = (props) => {
   return (
-    <div className="individual" id={props.info.name}>
+    <div className="individual" id={props.info.idName}>
       <div className="name-desc">
         <div className="name underline">{props.info.name}</div> 
         <div className="desc">{props.info.fullDescription}</div>
