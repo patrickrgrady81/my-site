@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
+import uuid from 'react-uuid';
 
 import './About.css'
 
 const About = () => {
+
+  const clicker = (e) => {
+    e.preventDefault();
+    console.log("clicked");
+    // window.location.href = "mailto:mail@example.org";
+  }
+
+  const [name, setName] = useState("Name")
+
   return (
     <div className="about about-container" id="About">
       <div className="me me-container">
@@ -15,20 +25,22 @@ const About = () => {
         </div>
       </div>
        <div className="ed">
-        <p>Education: Flatiron Bootcamp </p>
+        <p className="boot">Education: Flatiron Bootcamp </p>
         <p className="dates">(11/2019 - 7/2021)</p>
        </div>
-      <div className="my-form">
-        <p className="more-info">Want to know leave a comment</p>
-        <p className="more-info">or know more about me?</p>
-        <input type="text" placeholder="Name"/>
-        <input type="text" placeholder="Company"/>
-        <input type="text" placeholder="Email"/>
-        <textarea placeholder="Comment" cols="5" rows="10" />
-        <p className="construction">(Under Construction)</p>
-        </div>
+      <form key={uuid()} className="my-form">
+        <p key={uuid()} className="more-info">Want to know leave a comment</p>
+        <p key={uuid()} className="more-info">or know more about me?</p>
+        <input key={uuid()} type="text" defaultValue={name} placeholder="Name"/>
+        <input key={uuid()} type="text" placeholder="Company"/>
+        <input key={uuid()} type="text" placeholder="Email"/>
+        <textarea key={uuid()} placeholder="Comment" cols="5" rows="10" />
+        <button key={uuid()} onClick={clicker}>Send</button>
+      </form>
       <div className="more more-container">
-        <p>Also a family man with a wife and twin boys. Hobbies besides programming include video game, roller blading, editing videos, reading and writing fiction.</p>
+        Also a family man with a wife and twin boys.
+        Hobbies besides programming include video games,
+        roller blading, editing videos, reading and writing fiction.
       </div>
     </div>
   )
