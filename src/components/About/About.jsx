@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import uuid from 'react-uuid';
 
 import './About.css'
@@ -8,10 +8,11 @@ const About = () => {
   const clicker = (e) => {
     e.preventDefault();
     console.log("clicked");
+    // setName("Name");
     // window.location.href = "mailto:mail@example.org";
   }
 
-  const [name, setName] = useState("Name")
+  // const [name, setName] = useState("Name");
 
   return (
     <div className="about about-container" id="About">
@@ -31,7 +32,7 @@ const About = () => {
       <form key={uuid()} className="my-form">
         <p key={uuid()} className="more-info">Want to know leave a comment</p>
         <p key={uuid()} className="more-info">or know more about me?</p>
-        <input key={uuid()} type="text" defaultValue={name} placeholder="Name"/>
+        <input key={uuid()} type="text" defaultValue="Name" placeholder="Name"/>
         <input key={uuid()} type="text" placeholder="Company"/>
         <input key={uuid()} type="text" placeholder="Email"/>
         <textarea key={uuid()} placeholder="Comment" cols="5" rows="10" />

@@ -3,8 +3,6 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
-  // eslint-disable-next-line
-  const pageHeight = window.innerHeight;
 
   return (
     <nav className="nav">
@@ -13,6 +11,11 @@ const Navbar = () => {
         <a href="/#Home">Home</a> 
         <a href="/#Projects">Projects</a>
         <a href="/#About">About</a>
+      </div>
+        <div className="hamburger">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
     </nav>
   )

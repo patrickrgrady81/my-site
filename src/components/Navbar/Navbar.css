@@ -6,7 +6,7 @@
   top: 0;
 
   height: 4rem;
-  width: auto;
+  width: 100%;
   border: 6px solid rgb(65, 65, 65);
   font-size: 2rem;
   background-color: rgb(65, 65, 65);
@@ -14,7 +14,6 @@
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
@@ -23,6 +22,7 @@
 }
 
 .logo, .links {
+  display: block;
   padding-left: 3rem;
 }
   
@@ -45,8 +45,33 @@ a:hover {
   color: rgb(125, 160, 250);
 }
 
-/* 
-@media (max-width: 768px) {
-  .nav{ flex-flow: column nowrap; }
-} */
+.hamburger {
+  display: none
+}
 
+@media only screen and (max-width: 800px) {
+  .links {
+    display: none;
+    grid-area: 1 / 5 / 2 / 6;
+  }
+
+  .logo { grid-area: 1 / 1 / 2 / 2; }
+
+  .hamburger {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+  }
+
+  .nav {
+    grid-template-rows: 1fr;
+  }
+}
