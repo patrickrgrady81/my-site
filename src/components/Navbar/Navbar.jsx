@@ -3,6 +3,14 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".nav");
+
+  const handleClick = () => {
+    console.log("clicked");
+    hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
+  }
 
   return (
     <nav className="nav">
@@ -12,7 +20,7 @@ const Navbar = () => {
         <a href="/#Projects">Projects</a>
         <a href="/#About">About</a>
       </div>
-        <div className="hamburger">
+        <div className="hamburger" onClick={handleClick}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
