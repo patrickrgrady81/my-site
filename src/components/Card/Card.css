@@ -130,3 +130,10 @@
 .pad {
   padding-left: 10%;
 }
+
+@media only screen and (max-width: 625px) {
+  .previous, .next {
+    font-size: 5rem;
+    padding-top: 3rem;
+  }
+}
