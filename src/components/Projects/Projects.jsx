@@ -18,7 +18,10 @@ const Projects = () => {
   return (
     <div className="projects-page" id="Projects">
       <div className="note">
-        <div className="message">Note: All backends are hosted on Heroku. <br />Please give the backend up to 30 seconds to load. <br /> Thank you.</div>
+        <div className="message"><p>Note: All backends are hosted on Heroku.</p>
+          <p>Please give the backend up to 30 seconds to load.</p>
+          <p>Thank you.</p>
+        </div>
       </div>
       <div className="project-list">
           { data.map(info => {
