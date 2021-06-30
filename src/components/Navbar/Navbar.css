@@ -12,27 +12,27 @@
   background-color: rgb(65, 65, 65);
   color: rgba(255, 241, 163, 0.5);
 
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  justify-content: space-between;
 
   white-space: nowrap;
   z-index: 100;
 }
 
-.logo, .links {
-  display: block;
-  padding-left: 3rem;
-}
-  
-.logo { 
-  grid-area: 1 / 1 / 2 / 3; 
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
 }
 
-.links { 
-  grid-area: 1 / 5 / 2 / 6; 
+.navLink {
   padding-right: 0;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: rgb(125, 160, 250);
 }
 
 a {
@@ -41,22 +41,18 @@ a {
   padding-right: 3rem;
 }
 
-a:hover {
-  color: rgb(125, 160, 250);
-}
-
 .hamburger {
   display: none
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .logo, .links {
     display: block;
     padding-left: 3rem;
     margin-top: 0.6rem;
     font-size: 1.3rem;
   }
-}
+} */
 
 @media only screen and (max-width: 625px) {
   .logo, .links {

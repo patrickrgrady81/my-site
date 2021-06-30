@@ -1,32 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { useForm } from "react-hook-form";
 
 import './Form.css';
 
 function Form() {
 
-  let [name, setName] = useState();
-
-  const clicker = (e) => {
-    e.preventDefault();
-    console.log("clicked");
-    // setName("Name");
-    // window.location.href = "mailto:mail@example.org";
+  const onSubmit = (data) => {
+    console.log(data);
+    alert("Thank you for your interest. I am still working on this component. Please email me at patgrady64@gmail.com");
   }
 
-  const handleName = (e) => {
-    console.log(e, name);
-    setName(e.target.value);
-  }
+  const {register, handleSubmit} = useForm();
 
     return (
-      <div className="my-form">
+      <form className="my-form" onSubmit={handleSubmit(onSubmit)}>
         <p className="more-info">Want to leave a comment</p>
         <p className="more-info">or know more about me?</p>
-        <input className="in" type="text" placeholder="Name" onChange={handleName}/>
-        <input className="in" type="text" placeholder="Email"/>
-        <textarea placeholder="Comment" cols="5" rows="10" />
-        <button onClick={clicker}>Send</button>
-      </div>
+        <input className="in" type="text" placeholder="Name" {...register("name")}/>
+        <input className="in" type="text" placeholder="Email" {...register("email")}/>
+        <textarea placeholder="Comment" cols="5" rows="10" {...register("comment")}/>
+        <button>Send</button>
+      </form>
     )
 }
 
