@@ -6,6 +6,7 @@
 
 .name, .desc {
   padding-left: 10px;
+  font-size: 1.5rem;
 }
 
 .name, .project-page-image {
@@ -13,8 +14,7 @@
 }
 
 .desc {
-  padding-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .project-page-image {
@@ -33,7 +33,9 @@
 .lang {
   height: 4vh;
   margin-bottom: 0;
-  font-size: 0.86rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  padding-left: 1rem;
 }
 
 .lang-list {
@@ -41,11 +43,6 @@
   font-size: 0.82rem;
   padding-left: 30px;
   padding-right: 90px;
-}
-
-.lang {
-  text-decoration: underline;
-  padding-left: 1rem;
 }
 
 .demo-code {
@@ -62,13 +59,14 @@
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: black;
   text-decoration: underline;  
 }
 
 li.li {
   list-style: square;
+  font-size: 1rem;
 }
 
 a.tooltips_cls {

@@ -1,5 +1,6 @@
 .page {
-  height: 300vh;
+  height: 100%;
   width: auto;
   cursor: default;
+  background-color: rgb(215, 245, 255);
 }

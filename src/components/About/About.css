@@ -1,13 +1,14 @@
 .about {
-  height: 80vh;
+  height: 120vh;
   width: auto;
+  background-color: rgb(215, 245, 255);
 }
 
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 .me, .ed, .my-form, .more {
@@ -163,8 +164,35 @@ textarea {
   }
 
   .about-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 0;
   }  
+
+  .me.me-container, div.ed, form.my-form, .more.more-container {
+    padding: 0.5rem;
+    margin: 0;
+  } 
+
+  .me.me-container {
+    order: 0;
+  }
+
+  div.ed {
+    order: 2;
+  }
+
+  form.my-form {
+    order: 3;
+  }
+
+  .more.more-container {
+    order: 1;
+  }
 
   .me-container, .ed, .my-form {
     margin: 1rem 0;
