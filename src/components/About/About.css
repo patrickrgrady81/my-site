@@ -28,6 +28,15 @@
 
 .my-form { 
   grid-area: 2 / 3 / 6 / 5; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.in {
+  display: flex;
+  margin: 1rem;
+  padding: 0.2rem;
 }
 
 .more { 
@@ -87,10 +96,6 @@ p.dates {
   padding-left: 2rem;
 }
 
-.my-form{
-  text-align: center;
-}
-
 input, textarea {
   display: block;
   margin-left: 3rem;
@@ -106,6 +111,19 @@ textarea {
 }
 
 @media only screen and (max-width: 800px) {
+  .about {
+    height: 0;
+  }
+
+  .about-container {
+    padding: 3rem;
+  }
+
+  .me.me-container, div.ed, form.my-form, .more.more-container {
+    padding: 0.5rem;
+    margin: 0;
+  } 
+
  .me-item, .ed > p, .my-form > p {
     font-size: 1.2rem;
     line-height: 0rem;
@@ -141,7 +159,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 555px) {
+@media only screen and (max-width: 670px) {
  .me > .me-item > p, .ed > p, .info > p, .my-form > p, .more > p  {
     font-size: 1rem;
     margin: 1rem;
@@ -171,6 +189,7 @@ textarea {
     align-content: stretch;
     align-items: stretch;
     padding: 0;
+    margin-top: 24rem;
   }  
 
   .me.me-container, div.ed, form.my-form, .more.more-container {
@@ -199,7 +218,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 490px) {
   .me > .me-item > p, .ed > p, .info > p, .my-form > p, .more > p  {
       font-size: 0.8rem;
       margin: 1rem;
@@ -223,4 +242,8 @@ textarea {
     margin: 1rem;
     line-height: 0rem;
   }
+
+  .about-container {
+    margin-top: 27rem;
+  }  
 }

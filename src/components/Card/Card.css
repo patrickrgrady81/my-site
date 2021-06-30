@@ -131,6 +131,14 @@
   padding-left: 10%;
 }
 
+.previous, .next {
+  margin-top: 5rem;
+}
+
+ .home-card {
+   margin-top: 7rem;
+ }
+
 @media only screen and (max-width: 625px) {
   .previous, .next {
     font-size: 5rem;

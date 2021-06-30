@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import uuid from 'react-uuid';
+import { useInterval } from '../useInterval';
 
 import data from '../../data';
 import './Card.css';
@@ -31,6 +32,10 @@ const Card = () => {
     }
     setCurrent(current + 1);
   }
+
+  useInterval(() => {
+    handleNext(current);
+  }, 1500);
 
   switch (data[current].type){
     case "Home":

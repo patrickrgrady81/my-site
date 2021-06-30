@@ -4,3 +4,15 @@
   cursor: default;
   background-color: rgb(215, 245, 255);
 }
+
+@media only screen and (max-width: 800px) {
+  .page {
+    height: 310vh;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .page {
+    height: 350vh;
+  }
+}
