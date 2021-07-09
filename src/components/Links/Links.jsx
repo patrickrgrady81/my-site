@@ -3,7 +3,7 @@ import React from 'react'
 import './Links.css'
 import github from './assets/gitthub.png'
 import linkedin from './assets/linkedin.png'
-import resume from './assets/Patrick.Grady.012.pdf'
+import resume from './assets/Patrick.Grady.013.pdf'
 
 const Links = () => {
 

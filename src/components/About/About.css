@@ -110,9 +110,17 @@ textarea {
   height: 30%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    padding-top: 13rem;
+}
+}
+
 @media only screen and (max-width: 800px) {
   .about {
     height: 0;
+    height: 10rem;
+    margin-top: 9rem;
   }
 
   .about-container {
@@ -152,10 +160,12 @@ textarea {
   }
 
   .project-list {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-gap: 25px 10px;
     grid-template-columns: repeat(1, 1fr);
-    height: 70vh;
+    height: 200vh;
   }
 }
 

@@ -37,6 +37,7 @@
   grid-gap: 25px 10px;
   grid-template-columns: repeat(2, 1fr);
   height: 70vh;
+  margin-bottom: 3rem;
 }
 
 .message {
@@ -59,10 +60,17 @@
 @media only screen and (max-width: 800px){
   .projects-page {
     height: 160vh;
-    padding-top: 0rem;
+    margin-top: 10rem;
   }
 
   .carousel-container {
     height: 60vh;
+  }
+}
+
+
+@media only screen and (max-width: 650px){
+  .projects-page {
+    margin-bottom: 70rem;
   }
 }

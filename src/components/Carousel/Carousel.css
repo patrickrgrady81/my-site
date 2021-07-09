@@ -1,10 +1,15 @@
 .carousel-container{
   background-color: rgb(215, 245, 255);
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   cursor: default;
 }
 
 .underline {
   text-decoration: underline;
+}
+
+.check {
+  appearance: none;
+  color: white;
 }

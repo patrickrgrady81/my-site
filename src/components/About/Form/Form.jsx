@@ -16,10 +16,11 @@ function Form() {
       <form className="my-form" onSubmit={handleSubmit(onSubmit)}>
         <p className="more-info">Want to leave a comment</p>
         <p className="more-info">or know more about me?</p>
-        <input className="in" type="text" placeholder="Name" {...register("name")}/>
-        <input className="in" type="text" placeholder="Email" {...register("email")}/>
-        <textarea placeholder="Comment" cols="5" rows="10" {...register("comment")}/>
-        <button>Send</button>
+        <input className="in" type="text" placeholder="Name" {...register("name")} disabled/>
+        <input className="in" type="text" placeholder="Email" {...register("email")} disabled/>
+        <textarea placeholder="Comment" cols="5" rows="10" {...register("comment")} disabled/>
+        <button disabled>Send</button>
+        <div className="error">Please check my contact information on my resume to contact me. Thank you.</div>
       </form>
     )
 }
