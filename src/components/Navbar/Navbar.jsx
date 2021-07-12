@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="links"> 
         <div className="navLink"onClick={goHome}>Home</div> 
         <div className="navLink"onClick={goToProjects}>Projects</div>
-        <div className="navLink"onClick={goToAbout}>About</div>
+        {/* <div className="navLink"onClick={goToAbout}>About</div> */}
       </div>
         <div className="hamburger" onClick={handleClick}>
         <span className="bar"></span>

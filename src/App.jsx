@@ -16,7 +16,6 @@ function App() {
     <Links />
     <Carousel />
     <Projects/>
-    <About/>
   </div>
   )
 }
