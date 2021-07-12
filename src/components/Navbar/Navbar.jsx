@@ -22,10 +22,10 @@ const Navbar = () => {
     window.location = "http://localhost:3000/#Projects";
   }
 
-  const goToAbout = (e) => {
-    console.log(e);
-    window.location = "http://localhost:3000/#About";
-  }
+  // const goToAbout = (e) => {
+  //   console.log(e);
+  //   window.location = "http://localhost:3000/#About";
+  // }
 
   return (
     <nav className="nav">
