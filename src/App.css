@@ -3,7 +3,7 @@
   width: auto;
   cursor: default;
   background-color: rgb(215, 245, 255);
-  /* background-image: url("./assets/bg1.jpg"); */
+  z-index: 99;
 }
 
 @media only screen and (max-width: 800px) {
