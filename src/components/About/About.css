@@ -1,5 +1,5 @@
 .about {
-  height: 120vh;
+  height: 180vh;
   width: auto;
   background-color: rgb(215, 245, 255);
 }
@@ -8,7 +8,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  padding-top: 8rem;
+  margin-top: 35rem;
+  background-color: rgb(215, 245, 255);
 }
 
 .me, .ed, .my-form, .more {
@@ -16,6 +17,7 @@
   border-radius: 20px;
   color: black;
   line-height: 2rem;
+  background-color: rgb(215, 245, 255);
 }
 
 .me { 
@@ -31,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(215, 245, 255);
 }
 
 .in {
@@ -109,22 +112,44 @@ textarea {
   width: 80%; 
   height: 30%;
 }
-
+/* 
 @media only screen and (max-width: 1000px) {
   .about-container {
     padding-top: 13rem;
-}
-}
+  }
+} */
 
 @media only screen and (max-width: 800px) {
   .about {
     height: 0;
-    height: 10rem;
-    margin-top: 9rem;
+    height: 40rem;
   }
 
   .about-container {
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    background-color: rgb(215, 245, 255);
+  }
+
+    .me.me-container {
+    order: 0;
+  }
+
+  div.ed {
+    order: 2;
+  }
+
+  form.my-form {
+    order: 3;
+  }
+
+  .more.more-container {
+    order: 1;
   }
 
   .me.me-container, div.ed, form.my-form, .more.more-container {
@@ -192,36 +217,16 @@ textarea {
   }
 
   .about-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
     padding: 0;
-    margin-top: 24rem;
+    margin-top: 60rem;
+    height: 270px;
+    background-color: rgb(215, 245, 255);
   }  
 
   .me.me-container, div.ed, form.my-form, .more.more-container {
     padding: 0.5rem;
     margin: 0;
   } 
-
-  .me.me-container {
-    order: 0;
-  }
-
-  div.ed {
-    order: 2;
-  }
-
-  form.my-form {
-    order: 3;
-  }
-
-  .more.more-container {
-    order: 1;
-  }
 
   .me-container, .ed, .my-form {
     margin: 1rem 0;

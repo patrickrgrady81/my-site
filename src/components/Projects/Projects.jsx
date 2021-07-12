@@ -5,16 +5,17 @@ import Card from './Card/Card';
 
 import data from '../../data'
 
-import MiniJs from '../Card/assets/MiniJs.png'
-import RecipeRevamp from '../Card/assets/RecipeRevamp.png';
+import Clock from '../Card/assets/Clock.png'
 import NovelIdeas from '../Card/assets/NovelIdeas.png';
+import Fresco from '../Card/assets/Fresco.png';
+import Breakout from '../Card/assets/Breakout.png';
 import PaddySnake from '../Card/assets/PaddySnake.png';
-import Peeker from '../Card/assets/Peeker.png';
+// import Peeker from '../Card/assets/Peeker.png';
 import CityInfo from '../Card/assets/CityInfo.png';
 
 
 const Projects = () => {
-  const image = [null, null, null, MiniJs, RecipeRevamp, NovelIdeas, PaddySnake, Peeker, CityInfo];
+  const image = [null, null, null, Clock, Fresco, Breakout, NovelIdeas, PaddySnake, CityInfo];
   return (
     <div className="projects-page" id="Projects">
       <div className="note">

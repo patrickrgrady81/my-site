@@ -5,11 +5,11 @@ import { useInterval } from '../useInterval';
 import data from '../../data';
 import './Card.css';
 
-import MiniJs from './assets/MiniJs.png'
-import RecipeRevamp from './assets/RecipeRevamp.png';
+import Clock from './assets/Clock.png'
+import Fresco from './assets/Fresco.png'
 import NovelIdeas from './assets/NovelIdeas.png';
+import Breakout from './assets/Breakout.png';
 import PaddySnake from './assets/PaddySnake.png';
-import Peeker from './assets/Peeker.png';
 import CityInfo from './assets/CityInfo.png';
 
 const Card = () => {
@@ -72,19 +72,19 @@ const Card = () => {
       let image;
       switch (data[current].id) {
         case 3:
-          image = MiniJs;
+          image = Clock;
           break;
         case 4:
-          image = RecipeRevamp;
+          image = Fresco;
           break;
         case 5:
-          image = NovelIdeas;
+          image = Breakout;
           break; 
         case 6:
-          image = PaddySnake;
+          image = NovelIdeas;
           break; 
         case 7:
-          image = Peeker;
+          image = PaddySnake;
           break; 
         case 8:
           image = CityInfo;
@@ -120,10 +120,3 @@ const Card = () => {
 }
 
 export default Card;
-
-
-//              <h1 className="span-col-2">Projects</h1>
-//              <img className="span-col-3 span-row-3 project-pic" src={MiniJs} alt="MiniJs" />
-//              <h2 className="span-col-2">{data[current].name}</h2>
-//              <div className="span-col-3">{data[current].briefDesc}</div>
-//              <div className="span-col-3" href="/#Projects">(Click Here For More Information)</div>
