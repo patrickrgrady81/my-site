@@ -14,7 +14,7 @@ function App() {
 
   console.log(BackgroundImage);
   return (
-  <div className="page" style={{backgroundImage: `url(${BackgroundImage})`}}>
+  <div className="page">
     <Navbar />
     <Links />
     <Carousel />
